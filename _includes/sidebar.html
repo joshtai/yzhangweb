@@ -1,10 +1,8 @@
 <div class="sidebar">
   <div class="container sidebar-sticky">
     <div class="sidebar-about">
-      <h1>
-        <a href="{{ site.baseurl }}">
+      <h1 >
           {{ site.title }}
-        </a>
       </h1>
       <p class="lead">{{ site.description }}</p>
     </div>
@@ -26,11 +24,13 @@
         {% endif %}
       {% endfor %}
 
-      <a class="sidebar-nav-item" href="{{ site.github.repo }}/archive/v{{ site.version }}.zip">Download</a>
-      <a class="sidebar-nav-item" href="{{ site.github.repo }}">GitHub project</a>
-      <span class="sidebar-nav-item">Currently v{{ site.version }}</span>
-    </nav>
-
+      <div class="nav-icon-list">
+        <a href="https://scholar.google.com/citations?user=mt3m9bIAAAAJ&hl=en/" target="_blank"><img src="public/img/myWeb_logo/gscholar.png" alt="Gscholar"  height="28px" style="vertical-align: middle;"/></a>&nbsp;&nbsp;
+        <a href="https://www.researchgate.net/profile/Yu_Zhang135" target="_blank"><img src="public/img/myWeb_logo/RG.png" alt="Researchgate"  height="24px" style="vertical-align: middle;"/></a>&nbsp;&nbsp;
+        <a href="https://www.linkedin.com/in/yu-zhang-8b276320/" target="_blank"><img src="public/img/myWeb_logo/Linkedin_black.png" alt="Linkedin"  height="24px" style="vertical-align: middle;"/></a>&nbsp;&nbsp;
+        <a href="https://github.com/yuzhang49" target="_blank"><img src="public/img/myWeb_logo/Github.png" alt="Github"  height="32px" style="vertical-align: middle;"/></a>&nbsp;&nbsp;
+        <a href="https://twitter.com/yzhang49" target="_blank"><img src="public/img/myWeb_logo/Twitter_black.png" alt="Twitter"  height="32px" style="vertical-align: middle;"/></a>&nbsp;&nbsp;
+      </div>
     <p>&copy; {{ site.time | date: '%Y' }}. All rights reserved.</p>
   </div>
 </div>

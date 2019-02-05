@@ -34,6 +34,10 @@
 html {
   font-family: "PT Sans", Helvetica, Arial, sans-serif;
 }
+
+table {
+  background-color: black;
+}
 @media (min-width: 48em) {
   html {
     font-size: 16px;
@@ -74,6 +78,12 @@ html {
 .sidebar a {
   color: #fff;
 }
+.pgtitle a {
+  color: black;
+}
+.nav-icon-list {
+  display: flex;
+}
 
 /* About section */
 .sidebar-about h1 {
@@ -93,9 +103,10 @@ html {
 }
 a.sidebar-nav-item:hover,
 a.sidebar-nav-item:focus {
-  text-decoration: underline;
+  font-weight: bold;
+  text-decoration: none;
 }
-.sidebar-nav-item.active {
+.sidebar-nav-item:active {
   font-weight: bold;
 }
 
